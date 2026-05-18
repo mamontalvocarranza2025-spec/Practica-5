@@ -1,0 +1,95 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* General */
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Header */
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Menú */
+.menu{
+    display:flex;
+    justify-content:space-around;
+    background:#555;
+}
+
+.menu div{
+    padding:15px;
+    color:white;
+}
+
+/* Contenedor principal (Grid) */
+.contenedor{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    gap:20px;
+    padding:20px;
+}
+
+/* Contenido */
+.contenido{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+/* Sidebar */
+.sidebar{
+    background:#ddd;
+    padding:20px;
+}
+
+/* Tarjetas (Flexbox) */
+.tarjetas{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
+    flex:1;
+    text-align:center;
+}
+
+/* Footer */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width:768px){
+    /* Menú vertical */
+    .menu{
+        flex-direction:column;
+        align-items:center;
+    }
+    /* Grid a una columna */
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+    /* Tarjetas en columna */
+    .tarjetas{
+        flex-direction:column;
+    }
+    /* Ajuste de texto */
+    header h1{
+        font-size:20px;
+    }
+}
